@@ -1,28 +1,48 @@
-println("HELLO WORLD");
-String firstSentence = "I SAID HELLO!";
-String secondSentence = "I CAN COUNT TO 10, BY 1!";
-//println(firstSentence);
-//println(secondSentence);
+//Global Variables
+  String c, y, z, d, e, f, g, ten, one;
+  int two, three, twenty, skipCount=2;
+  float thirty;
+ //
+void setup() 
+{
+  String secondSentence = "I CAN COUNT TO 10, BY 1!"; //Loacl Variable
+  //println(secondSentence);
+  y = ",";
+  z = ".";
+  c = "DANIEL";
+  d = "CAN";
+  e = "COUNT";
+  f = "TO";
+  g = "BY";
+  ten = "10000";
+  twenty = int(ten);
+  thirty = 10000.0; // must include decimals bcause float
+  one = "1";
+  two = int(one); //only one formula to change, good
+  three = two; //variable references formula
+  println(d, e, f, ten+y, g, int(one)+two+z); // Casting, making a STRING into a INTEGER
+  println( "One plus two is", one+two );
+} //END SETUP
 //
-//Concatenation
-char x = '!';
-String a = "I";
-String b = "SAID";
-String c = "HELLO";
-char space = ' '; //"System Resources", use "char", choose your variables wisely for the hard drive space
-//println(a+space+b+space+c+x); // First method of Concatenation, +
-//println(a, b, c+x); // Second method of Concatenation, notice the spaces (human reading)
+void draw() 
+{
+  two+=skipCount; //two + 1, two++, two+=1
+  println(c, d, e, f, ten+y, g, two+z);
+  three*=skipCount; //two + 1, two++, two+=1
+  println(c, d, e, f, ten+y, g, three+z);
+  thirty/=skipCount; //two + 1, two++, two+=1
+  println(c, d, e, f, twenty+y, g, thirty+z);
+} //END DRAW
 //
-//Concatenation
-String y = ",";
-String z = ".";
-String d = "CAN";
-String e = "COUNT";
-String f = "TO";
-String g = "BY";
-String ten = "10";
-String one = "1";
-int two = 1;
-//println(a+space+d+space+e+space+f+space+ten+y+space+g+space+one+x+"\n"); // Character escape, \
-println("\t"+a, d, e, f, ten+y, g, int(one)+two+x); // Casting, making a STRING into a INTEGER
-println( "One plus two is", one+two );
+void keyPressed() {} //END keyPressed
+//
+void mousePressed() {} //END mousePressed
+//
+
+
+
+
+
+/*
+
+*/
