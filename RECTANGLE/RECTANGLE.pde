@@ -1,8 +1,4 @@
-size(500, 300); //Displaye geomemetry: square, landscape
-//fullScreen();
-println("Canvas", width, height);
-println("Display Orientation", "width", displayWidth, "height", displayHeight);
-//
+//Global Variables
 int x=width*1/4, y=height*1/4, rectWidth=width*1/2, rectHeight=height*1/2;
 int thin=width*1/50, thick=2*thin, resetDefault=1;
 color yellow=#F8FC64, purple=#FA00F6, colourResetBlack=#000000, colourResetWhite=#FFFFFF;
@@ -12,6 +8,16 @@ float backGroundNightMode=0, blueBackGroundColour = random(255);
 int backGroundBlue;
 Boolean nightMode=false;
 //
+void setup() 
+{
+size(500, 300); //Display geomemetry: square, landscape
+//fullScreen();
+println("Canvas", width, height);
+println("Display Orientation", "width", displayWidth, "height", displayHeight);
+} //End setup
+//
+void draw () 
+{
 //Gray Scale, 0-255
 background(70);
 //RGB, random(a, b)
@@ -36,3 +42,8 @@ rect(x, y, rectWidth, rectHeight);
 strokeWeight(resetDefault);
 stroke(colourResetBlack);
 fill(colourResetWhite);
+} //End draw
+//
+void keyPressed() {} //End keyPressed
+//
+void mousePressed() {} //End mousePressed
